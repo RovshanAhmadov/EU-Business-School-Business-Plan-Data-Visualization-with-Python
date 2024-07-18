@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+
+# Data for break even analysis and break even points
+years = [2025, 2026, 2027, 2028, 2029]
+bep_revenue = [1089334, 600000, 900000, 1100000, 1300000]
+total_revenue = [500000, 1100000, 1700000, 2300000, 2900000]
+
+# Plotting the data
+plt.figure(figsize=(10, 6))
+plt.plot(years, bep_revenue, marker='o', linestyle='-', color='r', label='Break-Even Revenue')
+plt.plot(years, total_revenue, marker='o', linestyle='-', color='b', label='Total Revenue')
+
+# Adding titles and labels
+plt.title('Break-Even Revenue vs Total Revenue (2025-2029)')
+plt.xlabel('Year')
+plt.ylabel('Revenue (₼)')
+plt.legend()
+plt.grid(True)
+plt.xticks(years)
+
+# Show the plot
+plt.show()
